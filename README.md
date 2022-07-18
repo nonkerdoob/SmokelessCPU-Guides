@@ -1,3 +1,7 @@
+
+> These are guides originally writen by a user named SmokelessCPU. He was an active contributor in [Legion Series Discord](https://discord.gg/legionseries) and one of the most knowledgable people I have come across before he decided to take a hiatus from the internet. You will be missed </3
+
+
 # LegionGuides
 A Collection of badly written guide made primarily for Legion User
 
