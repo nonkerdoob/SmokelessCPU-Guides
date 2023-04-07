@@ -51,6 +51,7 @@ If your bios name is in this table, rename the just extracted rom to that name *
 |BHCN       | BHCrisis.bin  |
 |H1CN       | h1cn.bin      |
 |GKCN       | gkcn.bin      |
+|KWCN       | kwcn.bin      |
 
 ## 5. Find the Crisis Name
  * Open The ROM File in UefiTool
