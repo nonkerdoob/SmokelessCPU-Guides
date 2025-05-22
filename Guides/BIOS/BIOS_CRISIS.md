@@ -1,3 +1,6 @@
+>[!NOTE]
+>22 May 2025. There have been slight modifications to the guide to make it up to date.
+
 # What is this?
 InsydeH2O BIOS has a modality, called Crisis Mode, that allows you to flash a BIOS from a USB Stick.
 This means that you can use it to flashback **"semi-bricked"** bios
@@ -17,8 +20,11 @@ A good way to tell if this method works is by looking at the behavior of the Lap
     > A wrong bios setting, for example, is one of these cases
 
 # How to do it
+
+Sometimes BIOS setups can come "protected". It can come with an extractor that extracts the installer to a specific location. Try following Step 3 with your BIOS installer. If you do not get files that are required for the guide, try following from Step 2 onwards.
+
 ## Tool Needed
-- [InnoExtract](https://github.com/dscharrer/innoextract/releases)
+- [InnoExtract](https://github.com/dscharrer/innoextract/releases) (ONLY for protected BIOS installers)
 - [7zip](https://www.7-zip.org/download.html)
 >The following two are needed only if, on step 5, your bios is not in the know one...
 - [UEFITOOL](https://github.com/LongSoft/UEFITool/releases)
@@ -31,7 +37,7 @@ Extract/Install the Downloaded Tool
 ## 1. Grab the Bios
 Download the bios file from the [Lenovo Support Website](https://pcsupport.lenovo.com/)
 
-## 2. Extract the BIOS from the EXE
+## 2. Extract the BIOS from the EXE (Optional. Only required for Protected BIOS installers)
 Put the Bios Exe File in the same directory as the `innoextract.exe` binary.
 
 Drag and drop the Bios Exe over the innoextract binary
