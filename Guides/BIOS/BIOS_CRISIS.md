@@ -1,5 +1,5 @@
 >[!NOTE]
->22 May 2025. There have been slight modifications to the guide to make it up to date.
+>22 May 2025. There have been slight modifications to the guide to bring it up to date.
 
 # What is this?
 InsydeH2O BIOS has a modality, called Crisis Mode, that allows you to flash a BIOS from a USB Stick.
@@ -20,8 +20,8 @@ A good way to tell if this method works is by looking at the behavior of the Lap
     > A wrong bios setting, for example, is one of these cases
 
 # How to do it
-
-Sometimes BIOS setups can come "protected". It can come with an extractor that extracts the installer to a specific location. Try following Step 3 with your BIOS installer. If you do not get files that are required for the guide, try following from Step 2 onwards.
+>[!IMPORTANT]
+>Sometimes BIOS setups can come "protected". It means the BIOS setup is extracted and then ran. If you are able to launch the BIOS setup directly, you may not have to follow Step 2.
 
 ## Tool Needed
 - [InnoExtract](https://github.com/dscharrer/innoextract/releases) (ONLY for protected BIOS installers)
