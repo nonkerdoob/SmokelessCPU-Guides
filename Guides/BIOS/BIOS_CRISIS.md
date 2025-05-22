@@ -53,6 +53,7 @@ If your bios name is in this table, rename the just extracted rom to that name *
 |GKCN       | gkcn.bin      |
 |KWCN       | kwcn.bin      |
 |JNCN       | jncn.bin      |
+|DZCN       | DZCrisis.bin  |
 
 ## 5. Find the Crisis Name
  * Open The ROM File in UefiTool
