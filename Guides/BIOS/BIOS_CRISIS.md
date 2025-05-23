@@ -38,15 +38,18 @@ Extract/Install the Downloaded Tool
 Download the bios file from the [Lenovo Support Website](https://pcsupport.lenovo.com/)
 
 ## 2. Extract the BIOS from the EXE (Optional. Only required for Protected BIOS installers)
+If this step doesn't work, skip to Step 3.
+
 Put the Bios Exe File in the same directory as the `innoextract.exe` binary.
 
 Drag and drop the Bios Exe over the innoextract binary
 _(or do from the CLI calling `innoextract.exe` and giving as first argument the bios exe file name)_
 
-## 3. Extract the Rom
 This will create a new folder (typically called `app` or `code$GetExtractPath`), open it, and there will another exe.
 
-Open It with 7z, and extract the BIOS ROM, normally called `BIOS.fd`, but can have a different name, but has always a size around 16 Mb (24Mb for 2022 Model).
+## 3. Extract the Rom
+
+Open the bios setup exe using 7z, and extract the BIOS ROM, normally called `BIOS.fd`, but can have a different name, but has always a size around 16 Mb (24Mb for 2022 Model).
 
 ## 4. Rename the file to the proper name
 If your bios name is in this table, rename the just extracted rom to that name *(Crisis Name)*, and **jump to step 6**.
@@ -60,6 +63,7 @@ If your bios name is in this table, rename the just extracted rom to that name *
 |KWCN       | kwcn.bin      |
 |JNCN       | jncn.bin      |
 |DZCN       | DZCrisis.bin  |
+|M3CN       | m3cn.bin      |
 
 ## 5. Find the Crisis Name
  * Open The ROM File in UefiTool
