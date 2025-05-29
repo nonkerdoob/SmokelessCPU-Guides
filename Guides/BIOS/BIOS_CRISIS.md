@@ -1,3 +1,6 @@
+>[!NOTE]
+>22 May 2025. There have been slight modifications to the guide to bring it up to date.
+
 # What is this?
 InsydeH2O BIOS has a modality, called Crisis Mode, that allows you to flash a BIOS from a USB Stick.
 This means that you can use it to flashback **"semi-bricked"** bios
@@ -17,8 +20,11 @@ A good way to tell if this method works is by looking at the behavior of the Lap
     > A wrong bios setting, for example, is one of these cases
 
 # How to do it
+>[!IMPORTANT]
+>Sometimes BIOS setups can come "protected". It means the BIOS setup is extracted and then ran. If you are able to launch the BIOS setup directly, you may not have to follow Step 2.
+
 ## Tool Needed
-- [InnoExtract](https://github.com/dscharrer/innoextract/releases)
+- [InnoExtract](https://github.com/dscharrer/innoextract/releases) (ONLY for protected BIOS installers)
 - [7zip](https://www.7-zip.org/download.html)
 >The following two are needed only if, on step 5, your bios is not in the know one...
 - [UEFITOOL](https://github.com/LongSoft/UEFITool/releases)
@@ -31,16 +37,19 @@ Extract/Install the Downloaded Tool
 ## 1. Grab the Bios
 Download the bios file from the [Lenovo Support Website](https://pcsupport.lenovo.com/)
 
-## 2. Extract the BIOS from the EXE
+## 2. Extract the BIOS from the EXE (Optional. Only required for Protected BIOS installers)
+If this step doesn't work, skip to Step 3.
+
 Put the Bios Exe File in the same directory as the `innoextract.exe` binary.
 
 Drag and drop the Bios Exe over the innoextract binary
 _(or do from the CLI calling `innoextract.exe` and giving as first argument the bios exe file name)_
 
-## 3. Extract the Rom
 This will create a new folder (typically called `app` or `code$GetExtractPath`), open it, and there will another exe.
 
-Open It with 7z, and extract the BIOS ROM, normally called `BIOS.fd`, but can have a different name, but has always a size around 16 Mb (24Mb for 2022 Model).
+## 3. Extract the Rom
+
+Open the bios setup exe using 7z, and extract the BIOS ROM, normally called `BIOS.fd`, but can have a different name, but has always a size around 16 Mb (24Mb for 2022 Model).
 
 ## 4. Rename the file to the proper name
 If your bios name is in this table, rename the just extracted rom to that name *(Crisis Name)*, and **jump to step 6**.
@@ -54,6 +63,7 @@ If your bios name is in this table, rename the just extracted rom to that name *
 |KWCN       | kwcn.bin      |
 |JNCN       | jncn.bin      |
 |DZCN       | DZCrisis.bin  |
+|M3CN       | m3cn.bin      |
 
 ## 5. Find the Crisis Name
  * Open The ROM File in UefiTool
