@@ -94,6 +94,9 @@ Create a FAT32, GPT formatted USB Stick, and copy in the root the file just rena
 
 The result needs to be a USB stick, with in the root a file with the right name ending in `.bin`
 
+>[!NOTE]
+>For Lenovo Legion 5 175ACH6H the USB Stick had to be formatted to FAT16. Partition of size 512MB was used.
+
 ## 7. Flash the BIOS
 
 **The Beep is damn loud and will last for 8-10min, so don't do this at night**
